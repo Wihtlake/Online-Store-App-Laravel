@@ -1,0 +1,79 @@
+main{
+	min-height: 1080px;
+	max-width: 1111px;
+	margin: 0 auto;
+}
+.width{
+	max-width: 1111px;
+	margin: 0 auto;
+}
+
+.back{
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+}
+.back:hover{
+	text-decoration: underline;
+}
+.admin_products {
+}
+.admin_products_index {
+	margin-top: 20px;
+}
+
+.admin_heading {
+	padding-top: 24px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+.admin_heading h2{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 59px;
+	text-align: center;
+	color: #000000;
+}
+.admin_block {
+	display: flex;
+	flex-direction: column;
+}
+.admin_cart {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 36px;
+	background: #f5f5f5bd;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.admin_item{
+	margin-bottom: 10px;
+}
+.admin_item h2{
+	font-weight: 100;
+}
+.admin_item h3{
+	font-weight: 100;
+
+}
+.popular_basket{
+	margin-top: 20px;
+	padding: 12px 42px;
+	font-weight: 300;
+	font-size: 24px;
+	text-decoration: none;
+	background: var(--bacground_color_second);
+	transition: .2s background ease-in-out, .2s color ease-in-out;
+	border: 1px solid #333333;
+	cursor: pointer;
+}
+.popular_basket:hover{
+	background: #333333;
+	color: var(--bacground_color_second);
+	transition: .2s background ease-in-out, .2s color ease-in-out;
+	cursor: pointer;
+
+}
+
+

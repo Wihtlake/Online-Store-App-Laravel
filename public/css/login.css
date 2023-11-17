@@ -1,0 +1,354 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Inter-light;
+
+
+	--text_color: #333333;
+	color: var(--text_color);
+
+	--bacground_color: #ffffff;
+
+	--bacground_color_second: #F2F3F5;
+
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+
+body{
+	background: var(--bacground_color);
+}
+
+/* Шапка */
+.header{
+	background: var(--bacground_color);
+	box-shadow: 0px 1px 5px rgba(0, 102, 102, 0.2);
+}
+.header_width_grid{
+	min-height: 90px;
+	max-width: 1379px ;
+	margin: 0 auto;
+}
+.header_block{
+	min-height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	margin-top: -11px;
+}
+.logo img{
+	width: 300px;
+	height: 41px;
+	object-fit: fill;
+}
+.menu{
+}
+.menu_ul_block{
+	width: 563px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu_list_block{
+	list-style: none;
+}
+.menu_link_block{
+	text-decoration: none;
+	color: var(--text_color);
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	position: relative;
+}
+
+.menu_link_block::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background: #3333335e; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+.menu_link_block:hover::after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background: #3333337e; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+
+.login_register{
+}
+.login_register_ul_block{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 158px;
+	list-style: none;
+}
+.login_register_list_block{
+
+}
+.login_register_link_block{
+	text-decoration: none;
+	color: var(--text_color);
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	position: relative;
+}
+.login_register_link_block::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background: #3333337e; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+.login_register_link_block:hover::after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background: #3333337e; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+.registration_main_block{
+	margin: 0 auto;
+	max-width: 577px;
+	margin-top: 103px;
+	margin-bottom: 483px;
+	background: var(--bacground_color_second);
+	border-radius: 10px;
+}
+.reg_form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.reg_form .reg_input{
+	width: 420px;
+	height: 60px;
+	margin-bottom: 24px;
+	padding-left: 27px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	border-radius: 5px;
+	outline: none;
+	border: 0px solid;
+}
+.reg_header{
+	padding-top: 28px;
+	margin-bottom: 14px;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+.reg_button{
+	margin-top: 31px;
+	margin-bottom: 34px;
+	width: 420px;
+	height: 60px;
+	text-align: center;
+	color: var(--bacground_color_second);
+	background: var(--text_color);
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	border-radius: 5px;
+	border: 0px solid;
+	transition: .2s color ease-in-out, .2s background ease-in-out;
+}
+
+.reg_button:hover{
+	cursor: pointer;
+	background: var(--bacground_color);
+	color: var(--text_color);
+	transition: .2s color ease-in-out, .2s background ease-in-out;
+}
+
+.reg_qest{
+	margin-top: 2px;
+	display: flex;
+	justify-content: space-between;
+	width: 408px;
+	margin: 0 auto;
+}
+.reg_chek_block label{
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+}
+.reg_check{
+	width: 15px;
+	height: 15px;
+	margin-right: 3px;
+}
+.reg_password_block{
+
+}
+.reg_password_block a{
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+	margin-top: 72px;
+	border-top: 3px var(--text_color) solid;
+	height: 340px;
+}
+.footer_info_block{
+	max-width: 1378px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_info_card:nth-child(1){
+	width: 250px;
+}
+.footer_info_card:nth-child(2){
+	width: 250px;
+	margin-left: -7px;
+}
+.footer_info_card:nth-child(3){
+	width: 250px;
+	margin-left: -7px;
+
+}
+.footer_info_card:nth-child(4){
+	width: 514px;
+	
+}
+.footer_info_card{
+	margin-top: 45px;
+}
+.footer_info_card h1{
+	font-family: Inter-Bold;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 12px;
+	line-height: 24px;
+}
+
+.footer_info_card p{
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	padding-left: 2px;
+}
+.footer_info_card a{
+	text-decoration: none;
+}
+.footer_info_card form{
+	display: flex;
+	margin-bottom: 11px;
+	padding-left: 2px;
+}
+.footer_info_card form input{
+	width: 293px;
+	height: 51px;
+	border: none;
+	background: var(--bacground_color_second);
+	font-family:Inter-Regular;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	padding-left: 19px ;
+}
+.footer_info_card form input::placeholder{
+	color: var(--text_color);
+}
+.footer_info_card form input:focus{
+	outline: none;
+}
+.footer_info_card form button{
+	width: 220px;
+	height: 51px;
+	border: none;
+	border-left: 1px var(--text_color) solid;
+	background: var(--bacground_color_second);
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+	cursor: pointer;
+	transition: .2s background ease-in-out, .2scolor ease-in-out;
+}
+.input_email:focus + .button_email{
+	background: var(--text_color);
+	color: var(--bacground_color);
+	transition: .2s background ease-in-out, .5s color ease-in-out;
+}
+
+.footer_info_card form button:hover{
+	background: var(--text_color);
+	color: var(--bacground_color);
+	transition: .2s background ease-in-out, .2s color ease-in-out;
+}
+@font-face {
+	font-family:Inter-ExtraLight;
+	src: url(fonts/Inter-ExtraLight.otf);
+}
+@font-face {
+	font-family:Inter-Light;
+	src: url(fonts/Inter-Light.otf);
+}
+@font-face {
+	font-family:Inter-Medium;
+	src: url(fonts/Inter-Medium.otf);
+}
+@font-face {
+	font-family:Inter-Regular;
+	src: url(fonts/Inter-Regular.otf);
+}
+@font-face {
+	font-family:Inter-Bold;
+	src: url(fonts/Inter-Bold.otf);
+}

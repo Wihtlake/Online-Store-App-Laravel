@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Inter-light;
+
+
+	--text_color: #333333;
+	color: var(--text_color);
+
+	--bacground_color: #ffffff;
+
+	--bacground_color_second: #F2F3F5;
+
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+
+body{
+	background: var(--bacground_color);
+}
+
+
+
+.basket_main_block{
+	max-width: 1379px ;
+	margin: 0 auto;
+}
+.basket_heading{
+	margin-top: 45px;
+}
+.basket_heading h2{
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+}
+.basket_block{
+	display: flex;
+	justify-content: space-between;
+}
+.basket_block_first{
+	display: flex;
+	flex-direction: column;
+	margin-top: 28px;
+	margin-bottom: 600px;
+}
+.item_main{
+	display: flex;
+	margin-bottom: 36px;
+}
+.basket_block_first img{
+	width: 108px;
+	height: 108px;
+	border-radius: 10px;
+	margin-right: 29px;
+	background: var(--bacground_color_second);
+	border: 1px solid var(--bacground_color_second);
+}
+.basket_name_count{
+	display: flex;
+	flex-direction: column;
+	align-items:stretch;
+	height: 108px;
+	width: 748px;
+}
+.basket_name{
+	display: flex;
+	justify-content: space-between;
+}
+.basket_name h2{
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+}
+.basket_name p{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+}
+.basket_count{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: auto;
+}
+.basket_delete_item{
+	background: var(--bacground_color_second);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 37px;
+	border-radius: 5px;
+	transition: .2s background ease-in-out;
+}
+.basket_delete_item .delete{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+	transition: .2s color ease-in-out;
+}
+.basket_delete_item:hover{
+	background: var(--text_color);
+	transition: .2s background ease-in-out;
+}
+.basket_delete_item:hover .delete{
+	color: var(--bacground_color_second);
+	transition: .2s color ease-in-out;
+
+}
+.basket_delete_item:hover .delete_photo{
+	filter: invert(100%);
+	transition: .2s filter ease-in-out;
+
+}
+.basket_delete_item img{
+	width: 24px;
+	height: 23px;
+	object-fit: cover;
+	margin-right: 8px;
+	transition: .2s filter ease-in-out;
+}
+.basket_count_item{
+	display: flex;
+	background: var(--bacground_color_second);
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 5px;
+	width: 150px;
+	height: 37px;
+}
+button{
+	background: none;
+	color: #000;
+	border: none;
+	cursor: pointer;
+}
+
+
+.count_item{
+	width: 26px;
+	height: 23px;
+	transition: .2s background ease-in-out;
+	border-radius: 5px;
+}
+.count_item:nth-child(odd):hover{
+	background: var(--bacground_color);
+	border-radius: 5px;
+	transition: .2s background ease-in-out;
+}
+.count_item img{
+	width: 26px;
+	height: 23px;
+}
+.plus{
+	text-align: center;
+	cursor: pointer;
+}
+.count h2{
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+	line-height: 29px;
+	margin-top: -2px;
+}
+.minus{
+	text-align: center;
+	cursor: pointer;
+}
+.basket_block_second{
+	width: 397px;
+	height: 234px;
+	border-radius: 5px;
+	background: var(--bacground_color_second);
+	display: flex;
+	flex-direction: column;
+}
+.basket_block_second h2{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	margin-left: 28px;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+.basket_block_second p{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	margin-left: 28px;
+	margin-bottom: 43px;
+}
+.basket_block_second a{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: var(--bacground_color_second);
+	background: var(--text_color);
+	text-decoration: none;
+	width: 343px;
+	text-align: center;
+	padding: 24px 0;
+	margin: auto;
+	margin-bottom: 24px;
+	border-radius: 5px;
+	transition: .2s background ease-in-out;
+}
+
+.basket_block_second a:hover{
+	color: var(--text_color);
+	background: var(--bacground_color_second);
+	transition: .2s background ease-in-out;
+	border: 1px var(--text_color) solid;
+}
+
+@font-face {
+	font-family:Inter-ExtraLight;
+	src: url(/fonts/Inter-ExtraLight.otf);
+}
+@font-face {
+	font-family:Inter-Light;
+	src: url(/fonts/Inter-Light.otf);
+}
+@font-face {
+	font-family:Inter-Medium;
+	src: url(/fonts/Inter-Medium.otf);
+}
+@font-face {
+	font-family:Inter-Regular;
+	src: url(/fonts/Inter-Regular.otf);
+}
+@font-face {
+	font-family:Inter-Bold;
+	src: url(/fonts/Inter-Bold.otf);
+}
